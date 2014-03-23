@@ -1,0 +1,58 @@
+<html>
+<head>
+
+<script src="js/task_man.js" type="text/javascript"></script>
+<link rel="stylesheet" href="stylesheets/style.css" type="text/css" >
+
+</head>
+
+<body>
+<p id="info">Developed by Arun Ramanathan. <a href="http://www.github.com/arunram92" target="_blank">Github: www.github.com/arunram92</a> </p>
+<p id="title"><b>TASK MANAGER</b></p>
+
+Create a New List<input type="text" id="add_list" placeholder="nameof the list"><button onclick="addlist()">Create</button>
+
+
+<br><br>
+<p>Existing Lists</p> <br><br>
+<div id="1_list">
+<p>To do</p>
+<ul id="one">
+
+<!-- one1= list no.1 item no.1 ,one2= list no. 1 item no.2 -->
+<li id="one1">First task</li>
+<button id="one1_del" type="button" onclick="deleteitem('one1','one1_del','one1_edit','one')">Delete</button>
+<button id="one1_edit" type="button" onclick="edititem('one1')">Edit</button>
+
+<li id="one2">second task</li>
+<button  id="one2_del" type="button" onclick="deleteitem('one2','one2_del','one2_edit','one')">Delete</button>
+<button id="one2_edit" type="button" onclick="edititem('one2')">Edit</button>
+
+</ul>
+Description<input type="text" id="add_desc1"><button id="add1" onclick="additem('one','add_desc1')">Add item</button>
+</div>
+
+<div id="2_list">
+<p>Done</p>
+
+<ul id="two">
+
+<li id="two1">First task</li>
+<button id="two1_del" type="button" onclick="deleteitem('two1','two1_del','two1_edit','two')">Delete</button>
+<button id="two1_edit" type="button" onclick="edititem('two1')">Edit</button>
+
+<li id="two2">second task</li>
+<button  id="two2_del" type="button" onclick="deleteitem('two2','two2_del','two2_edit','two')">Delete</button>
+<button id="two2_edit" type="button" onclick="edititem('two2')">Edit</button>
+
+</ul>
+Description<input type="text" id="add_desc2"><button id="add2" onclick="additem('two','add_desc2')">Add item</button>
+</div>
+
+
+
+
+</body>
+
+
+</html>
